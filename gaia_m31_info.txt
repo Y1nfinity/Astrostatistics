@@ -1,0 +1,16 @@
+GAIA M31-FIELD LIGHT CURVES -- GU4303 linear-regression lab
+============================================================
+File: gaia_m31_lcs.csv (one row per photometric epoch)
+  source_id  Gaia DR3 source identifier (group rows by this)
+  t_year     observation epoch, calendar years (2014.6 - 2017.4)
+  gmag       Gaia G-band magnitude at that epoch
+  gmag_err   photon-noise uncertainty on gmag (magnitudes)
+
+~2,000 stars, G < 17, >= 30 epochs each, from the Gaia DR3 "GAPS" field
+centred on M31 (Evans et al. 2023, A&A 674, A4) -- the only Gaia field whose
+time-series were released for EVERY source rather than only for stars
+pre-selected as variable. At these magnitudes the sample is dominated by
+ordinary Milky Way foreground stars.
+
+Remember: magnitudes run backwards. A POSITIVE slope dm/dt means the star is
+getting FAINTER (dimming); negative means brightening.
